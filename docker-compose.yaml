@@ -1,0 +1,12 @@
+services:
+  app:
+    build: .
+    command: ["/bin/matterbridge", "-conf", "/etc/matterbridge/matterbridge.toml", "-debug" ]
+    environment:
+      # These override values in matterbridge.toml at runtime as per:
+      # https://github.com/42wim/matterbridge/wiki/Gateway-config-%28basic%29#environment-variables
+      - MATTERBRIDGE_DISCORD_KOLAB_SERVER=${MATTERBRIDGE_DISCORD_KOLAB_SERVER:-830768294906167327}
+      - MATTERBRIDGE_DISCORD_KOLAB_TOKEN=${MATTERBRIDGE_DISCORD_KOLAB_TOKEN:-changeme}
+      - MATTERBRIDGE_MATTERMOST_KOLAB_SERVER=${MATTERBRIDGE_MATTERMOST_KOLAB_SERVER:-mattermost.ko-lab.space:443}
+      - MATTERBRIDGE_MATTERMOST_KOLAB_LOGIN=${MATTERBRIDGE_MATTERMOST_KOLAB_LOGIN:-matterbridge}
+      - MATTERBRIDGE_MATTERMOST_KOLAB_PASSWORD=${MATTERBRIDGE_MATTERMOST_KOLAB_PASSWORD:-changeme}
