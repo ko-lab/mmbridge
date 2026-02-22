@@ -8,7 +8,17 @@ PreserveThreading=true
 Server="mattermost.ko-lab.space:443"
 Team="kolab"
 Login="matterbridge"
-Password="changeme"
+Password="changme"
+PrefixMessagesWithNick=true
+# https://github.com/42wim/matterbridge/wiki/Settings#remotenickformat
+RemoteNickFormat=":{NICK}: **{NICK}**\n"
+PreserveThreading=true
+
+[mattermost.members]
+Server="mattermost.ko-lab.space:443"
+Team="members"
+Login="matterbridge"
+Password="changme"
 PrefixMessagesWithNick=true
 # https://github.com/42wim/matterbridge/wiki/Settings#remotenickformat
 RemoteNickFormat=":{NICK}: **{NICK}**\n"
@@ -16,7 +26,7 @@ PreserveThreading=true
 
 [discord.kolab]
 Server="830768294906167327"
-Token="changeme"
+Token="changme"
 PreserveThreading=true
 AllowMention=["everyone", "roles", "users"]
 ShowEmbeds=false
@@ -41,6 +51,7 @@ MessageClipped="<clipped message>"
 MessageSplitMaxCount=3
 
 
+
 [[gateway]]
 name = "mattermost ID:1071897855821873202 -> light"
 enable = true
@@ -50,7 +61,6 @@ channel = "ID:1071897855821873202"
 [[gateway.inout]]
 account = "mattermost.kolab"
 channel = "light"
-
 
 [[gateway]]
 name = "mattermost ID:1151115596986069103 -> meme"
@@ -62,7 +72,6 @@ channel = "ID:1151115596986069103"
 account = "mattermost.kolab"
 channel = "meme"
 
-
 [[gateway]]
 name = "mattermost ID:1151135087908368444 -> home-automation"
 enable = true
@@ -72,7 +81,6 @@ channel = "ID:1151135087908368444"
 [[gateway.inout]]
 account = "mattermost.kolab"
 channel = "home-automation"
-
 
 [[gateway]]
 name = "mattermost ID:1160490200225546290 -> osint"
@@ -84,7 +92,6 @@ channel = "ID:1160490200225546290"
 account = "mattermost.kolab"
 channel = "osint"
 
-
 [[gateway]]
 name = "mattermost ID:1171348925807067177 -> hackernews"
 enable = true
@@ -94,7 +101,6 @@ channel = "ID:1171348925807067177"
 [[gateway.inout]]
 account = "mattermost.kolab"
 channel = "hackernews"
-
 
 [[gateway]]
 name = "mattermost ID:1175396080670756904 -> astronautics"
@@ -106,7 +112,6 @@ channel = "ID:1175396080670756904"
 account = "mattermost.kolab"
 channel = "astronautics"
 
-
 [[gateway]]
 name = "mattermost ID:1187390899936829481 -> entrepreneurship"
 enable = true
@@ -116,7 +121,6 @@ channel = "ID:1187390899936829481"
 [[gateway.inout]]
 account = "mattermost.kolab"
 channel = "entrepreneurship"
-
 
 [[gateway]]
 name = "mattermost ID:1192953356818337922 -> supply-and-demand"
@@ -128,7 +132,6 @@ channel = "ID:1192953356818337922"
 account = "mattermost.kolab"
 channel = "supply-and-demand"
 
-
 [[gateway]]
 name = "mattermost ID:1218208784564883537 -> meshtastic"
 enable = true
@@ -138,7 +141,6 @@ channel = "ID:1218208784564883537"
 [[gateway.inout]]
 account = "mattermost.kolab"
 channel = "meshtastic"
-
 
 [[gateway]]
 name = "mattermost ID:1219998752442548224 -> media"
@@ -150,7 +152,6 @@ channel = "ID:1219998752442548224"
 account = "mattermost.kolab"
 channel = "media"
 
-
 [[gateway]]
 name = "mattermost ID:1220410610546770061 -> movies-to-see"
 enable = true
@@ -160,7 +161,6 @@ channel = "ID:1220410610546770061"
 [[gateway.inout]]
 account = "mattermost.kolab"
 channel = "movies-to-see"
-
 
 [[gateway]]
 name = "mattermost ID:1260114504830681128 -> lego"
@@ -172,7 +172,6 @@ channel = "ID:1260114504830681128"
 account = "mattermost.kolab"
 channel = "lego"
 
-
 [[gateway]]
 name = "mattermost ID:1275100303632629833 -> ko-lab-cyberstride"
 enable = true
@@ -182,7 +181,6 @@ channel = "ID:1275100303632629833"
 [[gateway.inout]]
 account = "mattermost.kolab"
 channel = "ko-lab-cyberstride"
-
 
 [[gateway]]
 name = "mattermost ID:1380196868767748127 -> osm-mobiliteit-en-verkeer"
@@ -194,7 +192,6 @@ channel = "ID:1380196868767748127"
 account = "mattermost.kolab"
 channel = "osm-mobiliteit-en-verkeer"
 
-
 [[gateway]]
 name = "mattermost ID:1425183206659067986 -> discord-alt"
 enable = true
@@ -204,7 +201,6 @@ channel = "ID:1425183206659067986"
 [[gateway.inout]]
 account = "mattermost.kolab"
 channel = "discord-alt"
-
 
 [[gateway]]
 name = "mattermost ID:830768294906167330 -> town-square"
@@ -216,7 +212,6 @@ channel = "ID:830768294906167330"
 account = "mattermost.kolab"
 channel = "town-square"
 
-
 [[gateway]]
 name = "mattermost ID:830772889573130251 -> introductions"
 enable = true
@@ -226,7 +221,6 @@ channel = "ID:830772889573130251"
 [[gateway.inout]]
 account = "mattermost.kolab"
 channel = "introductions"
-
 
 [[gateway]]
 name = "mattermost ID:863413326544371722 -> music-production"
@@ -238,7 +232,6 @@ channel = "ID:863413326544371722"
 account = "mattermost.kolab"
 channel = "music-production"
 
-
 [[gateway]]
 name = "mattermost ID:863413513329180703 -> electronics"
 enable = true
@@ -248,7 +241,6 @@ channel = "ID:863413513329180703"
 [[gateway.inout]]
 account = "mattermost.kolab"
 channel = "electronics"
-
 
 [[gateway]]
 name = "mattermost ID:863413687310221342 -> chemistry-and-biology"
@@ -260,7 +252,6 @@ channel = "ID:863413687310221342"
 account = "mattermost.kolab"
 channel = "chemistry-and-biology"
 
-
 [[gateway]]
 name = "mattermost ID:863413829870026762 -> experimental-gastronomy"
 enable = true
@@ -270,7 +261,6 @@ channel = "ID:863413829870026762"
 [[gateway.inout]]
 account = "mattermost.kolab"
 channel = "experimental-gastronomy"
-
 
 [[gateway]]
 name = "mattermost ID:863413899998003201 -> mechanics"
@@ -282,7 +272,6 @@ channel = "ID:863413899998003201"
 account = "mattermost.kolab"
 channel = "mechanics"
 
-
 [[gateway]]
 name = "mattermost ID:863413984250036235 -> radio"
 enable = true
@@ -292,7 +281,6 @@ channel = "ID:863413984250036235"
 [[gateway.inout]]
 account = "mattermost.kolab"
 channel = "radio"
-
 
 [[gateway]]
 name = "mattermost ID:863414317584351242 -> woodworking"
@@ -304,7 +292,6 @@ channel = "ID:863414317584351242"
 account = "mattermost.kolab"
 channel = "woodworking"
 
-
 [[gateway]]
 name = "mattermost ID:863414394133545000 -> plastic-moon"
 enable = true
@@ -314,7 +301,6 @@ channel = "ID:863414394133545000"
 [[gateway.inout]]
 account = "mattermost.kolab"
 channel = "plastic-moon"
-
 
 [[gateway]]
 name = "mattermost ID:863414610610356254 -> programming"
@@ -326,7 +312,6 @@ channel = "ID:863414610610356254"
 account = "mattermost.kolab"
 channel = "programming"
 
-
 [[gateway]]
 name = "mattermost ID:863443214521729034 -> right-to-repair"
 enable = true
@@ -336,7 +321,6 @@ channel = "ID:863443214521729034"
 [[gateway.inout]]
 account = "mattermost.kolab"
 channel = "right-to-repair"
-
 
 [[gateway]]
 name = "mattermost ID:863456400898129920 -> bot-testing"
@@ -348,7 +332,6 @@ channel = "ID:863456400898129920"
 account = "mattermost.kolab"
 channel = "bot-testing"
 
-
 [[gateway]]
 name = "mattermost ID:863463935914541056 -> privacy-security"
 enable = true
@@ -358,7 +341,6 @@ channel = "ID:863463935914541056"
 [[gateway.inout]]
 account = "mattermost.kolab"
 channel = "privacy-security"
-
 
 [[gateway]]
 name = "mattermost ID:863479805847666729 -> gaming"
@@ -370,7 +352,6 @@ channel = "ID:863479805847666729"
 account = "mattermost.kolab"
 channel = "gaming"
 
-
 [[gateway]]
 name = "mattermost ID:863735933445865492 -> video-synthesis"
 enable = true
@@ -380,7 +361,6 @@ channel = "ID:863735933445865492"
 [[gateway.inout]]
 account = "mattermost.kolab"
 channel = "video-synthesis"
-
 
 [[gateway]]
 name = "mattermost ID:866210105409404938 -> youtube-gold"
@@ -392,7 +372,6 @@ channel = "ID:866210105409404938"
 account = "mattermost.kolab"
 channel = "youtube-gold"
 
-
 [[gateway]]
 name = "mattermost ID:866932341950513203 -> lock-picking"
 enable = true
@@ -402,7 +381,6 @@ channel = "ID:866932341950513203"
 [[gateway.inout]]
 account = "mattermost.kolab"
 channel = "lock-picking"
-
 
 [[gateway]]
 name = "mattermost ID:878187233465733130 -> crypto"
@@ -414,7 +392,6 @@ channel = "ID:878187233465733130"
 account = "mattermost.kolab"
 channel = "crypto"
 
-
 [[gateway]]
 name = "mattermost ID:878407769219285012 -> item-proposals"
 enable = true
@@ -424,7 +401,6 @@ channel = "ID:878407769219285012"
 [[gateway.inout]]
 account = "mattermost.kolab"
 channel = "item-proposals"
-
 
 [[gateway]]
 name = "mattermost ID:878576854221619230 -> photography"
@@ -436,7 +412,6 @@ channel = "ID:878576854221619230"
 account = "mattermost.kolab"
 channel = "photography"
 
-
 [[gateway]]
 name = "mattermost ID:884350289019289620 -> cnc-3d-lasercutting"
 enable = true
@@ -447,7 +422,6 @@ channel = "ID:884350289019289620"
 account = "mattermost.kolab"
 channel = "cnc-3d-lasercutting"
 
-
 [[gateway]]
 name = "mattermost ID:914188368835932271 -> advent-of-code"
 enable = true
@@ -457,3 +431,26 @@ channel = "ID:914188368835932271"
 [[gateway.inout]]
 account = "mattermost.kolab"
 channel = "advent-of-code"
+
+
+
+[[gateway]]
+name = "mattermost members ID:830792900857430036 -> town-square"
+enable = true
+[[gateway.inout]]
+account = "discord.kolab"
+channel = "ID:830792900857430036"
+[[gateway.inout]]
+account = "mattermost.members"
+channel = "town-square"
+
+[[gateway]]
+name = "mattermost members ID:830797493335097375 -> bot-test"
+enable = true
+[[gateway.inout]]
+account = "discord.kolab"
+channel = "ID:830797493335097375"
+[[gateway.inout]]
+account = "mattermost.members"
+channel = "bot-test"
+
