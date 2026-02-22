@@ -8,7 +8,7 @@ PreserveThreading=true
 Server="mattermost.ko-lab.space:443"
 Team="kolab"
 Login="matterbridge"
-Password="changme"
+Password="changeme"
 PrefixMessagesWithNick=true
 # https://github.com/42wim/matterbridge/wiki/Settings#remotenickformat
 RemoteNickFormat=":{NICK}: **{NICK}**\n"
@@ -18,7 +18,7 @@ PreserveThreading=true
 Server="mattermost.ko-lab.space:443"
 Team="members"
 Login="matterbridge"
-Password="changme"
+Password="changeme"
 PrefixMessagesWithNick=true
 # https://github.com/42wim/matterbridge/wiki/Settings#remotenickformat
 RemoteNickFormat=":{NICK}: **{NICK}**\n"
@@ -26,7 +26,7 @@ PreserveThreading=true
 
 [discord.kolab]
 Server="830768294906167327"
-Token="changme"
+Token="changeme"
 PreserveThreading=true
 AllowMention=["everyone", "roles", "users"]
 ShowEmbeds=false
@@ -435,6 +435,56 @@ channel = "advent-of-code"
 
 
 [[gateway]]
+name = "mattermost members ID:1022224596562366535 -> fix-the-space"
+enable = true
+[[gateway.inout]]
+account = "discord.kolab"
+channel = "ID:1022224596562366535"
+[[gateway.inout]]
+account = "mattermost.members"
+channel = "fix-the-space"
+
+[[gateway]]
+name = "mattermost members ID:1220367512269750272 -> projects"
+enable = true
+[[gateway.inout]]
+account = "discord.kolab"
+channel = "ID:1220367512269750272"
+[[gateway.inout]]
+account = "mattermost.members"
+channel = "projects"
+
+[[gateway]]
+name = "mattermost members ID:1253056941920354445 -> operation_hacker-home"
+enable = true
+[[gateway.inout]]
+account = "discord.kolab"
+channel = "ID:1253056941920354445"
+[[gateway.inout]]
+account = "mattermost.members"
+channel = "operation_hacker-home"
+
+[[gateway]]
+name = "mattermost members ID:1350955438547669116 -> brainstorm"
+enable = true
+[[gateway.inout]]
+account = "discord.kolab"
+channel = "ID:1350955438547669116"
+[[gateway.inout]]
+account = "mattermost.members"
+channel = "brainstorm"
+
+[[gateway]]
+name = "mattermost members ID:830792589191938060 -> orga"
+enable = true
+[[gateway.inout]]
+account = "discord.kolab"
+channel = "ID:830792589191938060"
+[[gateway.inout]]
+account = "mattermost.members"
+channel = "orga"
+
+[[gateway]]
 name = "mattermost members ID:830792900857430036 -> town-square"
 enable = true
 [[gateway.inout]]
@@ -454,3 +504,112 @@ channel = "ID:830797493335097375"
 account = "mattermost.members"
 channel = "bot-test"
 
+[[gateway]]
+name = "mattermost members ID:863470322354225152 -> workshops"
+enable = true
+[[gateway.inout]]
+account = "discord.kolab"
+channel = "ID:863470322354225152"
+[[gateway.inout]]
+account = "mattermost.members"
+channel = "workshops"
+
+[[gateway]]
+name = "mattermost members ID:865247566172782612 -> nsfw"
+enable = true
+[[gateway.inout]]
+account = "discord.kolab"
+channel = "ID:865247566172782612"
+[[gateway.inout]]
+account = "mattermost.members"
+channel = "nsfw"
+
+[[gateway]]
+name = "mattermost members ID:886960724872658995 -> website"
+enable = true
+[[gateway.inout]]
+account = "discord.kolab"
+channel = "ID:886960724872658995"
+[[gateway.inout]]
+account = "mattermost.members"
+channel = "website"
+
+[[gateway]]
+name = "mattermost members ID:887774219239297104 -> todo_space"
+enable = true
+[[gateway.inout]]
+account = "discord.kolab"
+channel = "ID:887774219239297104"
+[[gateway.inout]]
+account = "mattermost.members"
+channel = "todo_space"
+
+[[gateway]]
+name = "mattermost members ID:904089103111422012 -> hacker-events-en-uitstappen"
+enable = true
+[[gateway.inout]]
+account = "discord.kolab"
+channel = "ID:904089103111422012"
+[[gateway.inout]]
+account = "mattermost.members"
+channel = "hacker-events-en-uitstappen"
+
+[[gateway]]
+name = "mattermost members ID:904784259070427146 -> toegang"
+enable = true
+[[gateway.inout]]
+account = "discord.kolab"
+channel = "ID:904784259070427146"
+[[gateway.inout]]
+account = "mattermost.members"
+channel = "toegang"
+
+[[gateway]]
+name = "mattermost members ID:905748869902651443 -> auction"
+enable = true
+[[gateway.inout]]
+account = "discord.kolab"
+channel = "ID:905748869902651443"
+[[gateway.inout]]
+account = "mattermost.members"
+channel = "auction"
+
+[[gateway]]
+name = "mattermost members ID:911375251097669652 -> badge"
+enable = true
+[[gateway.inout]]
+account = "discord.kolab"
+channel = "ID:911375251097669652"
+[[gateway.inout]]
+account = "mattermost.members"
+channel = "badge"
+
+[[gateway]]
+name = "mattermost members ID:911718517496217660 -> agenda-intern"
+enable = true
+[[gateway.inout]]
+account = "discord.kolab"
+channel = "ID:911718517496217660"
+[[gateway.inout]]
+account = "mattermost.members"
+channel = "agenda-intern"
+
+[[gateway]]
+name = "mattermost members ID:924456219203235911 -> iot"
+enable = true
+[[gateway.inout]]
+account = "discord.kolab"
+channel = "ID:924456219203235911"
+[[gateway.inout]]
+account = "mattermost.members"
+channel = "iot"
+
+[[gateway]]
+name = "mattermost members ID:945738686102929489 -> space-state"
+enable = true
+[[gateway.inout]]
+account = "discord.kolab"
+channel = "ID:945738686102929489"
+[[gateway.inout]]
+account = "mattermost.members"
+channel = "space-state"
