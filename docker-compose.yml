@@ -2,6 +2,7 @@ services:
   app:
     build: .
     command: ["/bin/matterbridge", "-conf", "/etc/matterbridge/matterbridge.toml", "-debug" ]
+    restart: "unless-stopped"
     environment:
       # These override values in matterbridge.toml at runtime as per:
       # https://github.com/42wim/matterbridge/wiki/Gateway-config-%28basic%29#environment-variables
